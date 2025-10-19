@@ -12,7 +12,7 @@ llm = ChatGroq(model="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
 
 # Define Summary Prompt
 prompt_template = """
-Provide a clear and concise summary in 300 words of the following website content:
+Provide a clear and concise summary for the following website content:
 Content: {text}
 """
 prompt = PromptTemplate(template=prompt_template, input_variables=["text"])
